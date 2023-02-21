@@ -1,3 +1,6 @@
 <h1>Details about the task!</h1>
+   <%= link_to edit_task_path(@task.id), class: 'btn btn-light btn-sm border' do %>
+    <p>Edit this task</p>
+    <% end %>
 <p><%= @task.details %></p>
 <%= link_to('Back to the list page', tasks_path) %>
